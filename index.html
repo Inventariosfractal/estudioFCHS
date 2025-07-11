@@ -1,0 +1,382 @@
+  // Lista de correos
+        const emailList = [
+            'lfacebedor@unal.edu.co', 'cdacostam@unal.edu.co', 'gaagredoc@unal.edu.co', 'aagudeloa@unal.edu.co',
+            'jdagudeloc@unal.edu.co', 'apagudelosa@unal.edu.co', 'cmalvarezg@unal.edu.co', 'daalvarez@unal.edu.co',
+            'amalvarezme@unal.edu.co', 'lalvarezm@unal.edu.co', 'dangulog@unal.edu.co', 'jhapontem@unal.edu.co',
+            'pjarangoa@unal.edu.co', 'jearangoca@unal.edu.co', 'carangol@unal.edu.co', 'jaarangom@unal.edu.co',
+            'jharcilal@unal.edu.co', 'saariasgu@unal.edu.co', 'daariast@unal.edu.co', 'jaaristizabalar@unal.edu.co',
+            'naristizaball@unal.edu.co', 'vmaristizabalm@unal.edu.co', 'laaristizabalq@unal.edu.co', 'leavendano@unal.edu.co',
+            'jaayalamo@unal.edu.co', 'sbaezp@unal.edu.co', 'hsbarcor@unal.edu.co', 'ghbarrenecher@unal.edu.co',
+            'jubastidasr@unal.edu.co', 'mbautistap@unal.edu.co', 'mebecerrah@unal.edu.co', 'fbecerraro@unal.edu.co',
+            'dabedoyar@unal.edu.co', 'mabenavidesl@unal.edu.co', 'lbermona@unal.edu.co', 'cabermudezm@unal.edu.co',
+            'rbetancourtg@unal.edu.co', 'jbuitragoa@unal.edu.co', 'ubustamantel@unal.edu.co', 'eacanopl@unal.edu.co',
+            'dmcardenasa@unal.edu.co', 'jicardenasj@unal.edu.co', 'gfcardona@unal.edu.co', 'ccardonaal@unal.edu.co',
+            'odcardonaa@unal.edu.co', 'macardonaji@unal.edu.co', 'lscardonam@unal.edu.co', 'luacarmonasa@unal.edu.co',
+            'jicarrerom@unal.edu.co', 'jgcarvajalo@unal.edu.co', 'sxcarvajalq@unal.edu.co', 'scasanovat@unal.edu.co',
+            'gacastanod@unal.edu.co', 'jmcastanom@unal.edu.co', 'cgcastellanosd@unal.edu.co', 'lfcastilloos@unal.edu.co',
+            'odcastrillong@unal.edu.co', 'jcchanchigo@unal.edu.co', 'pchang@unal.edu.co', 'dchavezc@unal.edu.co',
+            'jcchicam@unal.edu.co', 'imcholoc@unal.edu.co', 'ikcollazoss@unal.edu.co', 'jccorderoc@unal.edu.co',
+            'crdcorreaal@unal.edu.co', 'osccorreac@unal.edu.co', 'lfcorteshe@unal.edu.co', 'acuellarb@unal.edu.co',
+            'pccuellars@unal.edu.co', 'alcuestame@unal.edu.co', 'gadabbracciok@unal.edu.co', 'omdiazb@unal.edu.co',
+            'lfdiazc@unal.edu.co', 'idobrosz-gomez@unal.edu.co', 'eduquees@unal.edu.co', 'ndduqueme@unal.edu.co',
+            'paescandon@unal.edu.co', 'geescobara@unal.edu.co', 'daescobarga@unal.edu.co', 'mescobaror@unal.edu.co',
+            'nesteband@unal.edu.co', 'jhestradae@unal.edu.co', 'jafigueroaf@unal.edu.co', 'dtflorezq@unal.edu.co',
+            'gflorezr@unal.edu.co', 'ofollecos@unal.edu.co', 'jfontalvoa@unal.edu.co', 'joaforerosa@unal.edu.co',
+            'ohfrancob@unal.edu.co', 'flfrancoi@unal.edu.co', 'jagalindod@unal.edu.co', 'fagallegol@unal.edu.co',
+            'fagallegor@unal.edu.co', 'rdgalvism@unal.edu.co', 'jcgarciaa@unal.edu.co', 'fjgarciaor@unal.edu.co',
+            'jegiraldoarb@unal.edu.co', 'jaiagiraldog@unal.edu.co', 'amgiraldoo@unal.edu.co', 'ohgiraldoo@unal.edu.co',
+            'tgiraldoo@unal.edu.co', 'mdgiraldori@unal.edu.co', 'lpgiraldov@unal.edu.co', 'magomez@unal.edu.co',
+            'jbgomezm@unal.edu.co', 'alvgomezp@unal.edu.co', 'ndgonzalezho@unal.edu.co', 'fagonzalez@unal.edu.co',
+            'nguerrerog@unal.edu.co', 'leguerrerom@unal.edu.co', 'gdguzmanr@unal.edu.co', 'giguzmansa@unal.edu.co',
+            'ehenaoc@unal.edu.co', 'shernandezn@unal.edu.co', 'jphernand@unal.edu.co', 'mrojashe@unal.edu.co',
+            'jpherrerac@unal.edu.co', 'jfherrerag@unal.edu.co', 'maherrerahu@unal.edu.co', 'jchiguitav@unal.edu.co',
+            'ghbustamante@unal.edu.co', 'jehurtadog@unal.edu.co', 'jghurtadoi@unal.edu.co', 'gidarragap@unal.edu.co',
+            'fnjimenezg@unal.edu.co', 'gjimenezob@unal.edu.co', 'jijurados@unal.edu.co', 'wmliconac@unal.edu.co',
+            'illanosc@unal.edu.co', 'jalondonol@unal.edu.co', 'edloperar@unal.edu.co', 'shloperapr@unal.edu.co',
+            'wrlopez@unal.edu.co', 'klopezb@unal.edu.co', 'dahlopezgar@unal.edu.co', 'mrlopezg@unal.edu.co',
+            'idlopezl@unal.edu.co', 'malopeztr@unal.edu.co', 'fhlopezv@unal.edu.co', 'aflopezv@unal.edu.co',
+            'lilopezv@unal.edu.co', 'jolozanoe@unal.edu.co', 'eflunan@unal.edu.co', 'ifmaciasq@unal.edu.co',
+            'lfmadridz@unal.edu.co', 'pfmarinc@unal.edu.co', 'jdmarinj@unal.edu.co', 'aymartinezar@unal.edu.co',
+            'ljmartinezhe@unal.edu.co', 'cemarulandae@unal.edu.co', 'amarulandam@unal.edu.co', 'gmedinaar@unal.edu.co',
+            'vmejiaa@unal.edu.co', 'vmejiab@unal.edu.co', 'cemejiac@unal.edu.co', 'cmendozab@unal.edu.co',
+            'famesar@unal.edu.co', 'oemezaa@unal.edu.co', 'demolinac@unal.edu.co', 'nlmontesc@unal.edu.co',
+            'nmontoyamo@unal.edu.co', 'lemorenom@unal.edu.co', 'lfmotatoro@unal.edu.co', 'lfmulcuen@unal.edu.co',
+            'jfmunozr@unal.edu.co', 'cmurillo@unal.edu.co', 'jcnaranjov@unal.edu.co', 'apnoguerad@unal.edu.co',
+            'jgocampoh@unal.edu.co', 'dlocampor@unal.edu.co', 'morozcoa@unal.edu.co', 'ceorregoa@unal.edu.co',
+            'hhortiza@unal.edu.co', 'dosoriob@unal.edu.co', 'aaosoriolo@unal.edu.co', 'gaosoriol@unal.edu.co',
+            'jaosorioos@unal.edu.co', 'jjosorioval@unal.edu.co', 'gaosorioz@unal.edu.co', 'hjosoriozu@unal.edu.co',
+            'llpalomap@unal.edu.co', 'mapantojao@unal.edu.co', 'japaredesl@unal.edu.co', 'jhparrasa@unal.edu.co',
+            'aepazgo@unal.edu.co', 'ppinedag@unal.edu.co', 'jfpunebam@unal.edu.co', 'oaprador@unal.edu.co',
+            'nprietoc@unal.edu.co', 'maprietot@unal.edu.co', 'aopulzaram@unal.edu.co', 'hquinterov@unal.edu.co',
+            'jquinonesc@unal.edu.co', 'laramirezc@unal.edu.co', 'jhramirezfra@unal.edu.co', 'oramirezga@unal.edu.co',
+            'camramirezma@unal.edu.co', 'ddramirezra@unal.edu.co', 'mcramiress@unal.edu.co', 'erestrepopa@unal.edu.co',
+            'jcrianoro@unal.edu.co', 'frinconc@unal.edu.co', 'jarinconla@unal.edu.co', 'ceriospi@unal.edu.co',
+            'snrodriguezba@unal.edu.co', 'erojasca@unal.edu.co', 'anfrojasgo@unal.edu.co', 'rarojasm@unal.edu.co',
+            'anroldang@unal.edu.co', 'faroldanh@unal.edu.co', 'arosalesr@unal.edu.co', 'rrovira@unal.edu.co',
+            'nlruizg@unal.edu.co', 'sruizhe@unal.edu.co', 'bjruizm@unal.edu.co', 'caruizvi@unal.edu.co',
+            'asalasmo@unal.edu.co', 'ahsalass@unal.edu.co', 'jjsalazarb@unal.edu.co', 'csalazaro@unal.edu.co',
+            'jjsalinas@unal.edu.co', 'nrsanabriag@unal.edu.co', 'afsanchezj@unal.edu.co', 'dmsanchezm@unal.edu.co',
+            'wasarachec@unal.edu.co', 'jmsarmienton@unal.edu.co', 'aesatizabalv@unal.edu.co', 'bsegurag@unal.edu.co',
+            'asepulvedag@unal.edu.co', 'jasepulvedag@unal.edu.co', 'jjsepulvedal@unal.edu.co', 'ffserranos@unal.edu.co',
+            'mmsierram@unal.edu.co', 'jcsolartet@unal.edu.co', 'esolorzano@unal.edu.co', 'dmsoteloca@unal.edu.co',
+            'jnsuarezh@unal.edu.co', 'vtabaresm@unal.edu.co', 'jatamayoar@unal.edu.co', 'oatapascoa@unal.edu.co',
+            'ratolosac@unal.edu.co', 'dtorresce@unal.edu.co', 'oltorresj@unal.edu.co', 'alhurtadou@unal.edu.co',
+            'jurreaa@unal.edu.co', 'ajustarizf@unal.edu.co', 'fjvalenciad@unal.edu.co', 'vevalenciam@unal.edu.co',
+            'ovalenciaro@unal.edu.co', 'gvargasa@unal.edu.co', 'sbvargasg@unal.edu.co', 'cvargash@unal.edu.co',
+            'lrvasquezv@unal.edu.co', 'lmvelasqueza@unal.edu.co', 'jjvelezu@unal.edu.co', 'javieiras@unal.edu.co',
+            'ejvillegasj@unal.edu.co', 'hvivasc@unal.edu.co', 'cyanezc@unal.edu.co', 'cyounesv@unal.edu.co',
+            'jdzambranona@unal.edu.co', 'azapatago@unal.edu.co', 'lzapatao@unal.edu.co', 'lmzuluagag@unal.edu.co'
+        ];
+
+        // Función para cambiar pestañas
+        function showTab(tabName) {
+            document.querySelectorAll('.tab-content').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            document.querySelectorAll('.tab-button').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            document.getElementById(tabName).classList.add('active');
+            event.target.classList.add('active');
+        }
+
+        // Función para filtrar comentarios
+        function filterComments(type) {
+            const container = document.getElementById('commentsContainer');
+            container.innerHTML = '';
+            
+            let filtered = surveyData.comments;
+            if (type !== 'all') {
+                const positionMap = {
+                    'negative': 'No, no estoy de acuerdo.',
+                    'neutral': 'Tengo dudas / No tengo una posición definida.',
+                    'positive': 'Sí, estoy de acuerdo.'
+                };
+                filtered = surveyData.comments.filter(c => c.position === positionMap[type]);
+            }
+            
+            // Actualizar botones
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+            
+            // Mostrar comentarios
+            filtered.forEach((comment, index) => {
+                const classMap = {
+                    'No, no estoy de acuerdo.': 'negative',
+                    'Tengo dudas / No tengo una posición definida.': 'neutral',
+                    'Sí, estoy de acuerdo.': 'positive'
+                };
+                
+                const div = document.createElement('div');
+                div.className = `comment-item ${classMap[comment.position]}`;
+                div.innerHTML = `
+                    <div class="comment-header">
+                        <span class="comment-position">${comment.position.replace(/\.$/, '')}</span>
+                        <span class="comment-number">#${index + 1}</span>
+                    </div>
+                    <p class="comment-text">${comment.text}</p>
+                `;
+                container.appendChild(div);
+            });
+        }
+
+        // Inicializar gráficos
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeCharts();
+            loadComments();
+            loadEmails();
+        });
+
+        function initializeCharts() {
+            // Gráfico Radar
+            const radarCtx = document.getElementById('radarChart').getContext('2d');
+            new Chart(radarCtx, {
+                type: 'radar',
+                data: {
+                    labels: [
+                        'Consenso Docente',
+                        'Participación',
+                        'Viabilidad Financiera',
+                        'Rigor Académico',
+                        'Pertinencia Regional',
+                        'Transparencia Proceso',
+                        'Documentación'
+                    ],
+                    datasets: [{
+                        label: 'Estado Actual',
+                        data: [18.5, 43.5, 15, 25, 20, 30, 20],
+                        backgroundColor: 'rgba(184, 39, 45, 0.2)',
+                        borderColor: colors.red,
+                        pointBackgroundColor: colors.red
+                    }, {
+                        label: 'Mínimo Requerido',
+                        data: [60, 50, 70, 75, 70, 80, 90],
+                        backgroundColor: 'rgba(148, 180, 59, 0.2)',
+                        borderColor: colors.green,
+                        pointBackgroundColor: colors.green
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        r: {
+                            beginAtZero: true,
+                            max: 100
+                        }
+                    }
+                }
+            });
+
+            // Gráfico de Torta
+            const pieCtx = document.getElementById('pieChart').getContext('2d');
+            new Chart(pieCtx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['En Desacuerdo (54.6%)', 'Con Dudas (26.9%)', 'De Acuerdo (18.5%)'],
+                    datasets: [{
+                        data: [59, 29, 20],
+                        backgroundColor: [colors.red, colors.yellow, colors.green],
+                        borderWidth: 2,
+                        borderColor: '#fff'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'bottom',
+                            labels: {
+                                padding: 20,
+                                font: { size: 14 }
+                            }
+                        }
+                    }
+                }
+            });
+
+            // Gráfico de Comparación
+            const comparisonCtx = document.getElementById('comparisonChart').getContext('2d');
+            new Chart(comparisonCtx, {
+                type: 'bar',
+                data: {
+                    labels: ['Encuesta Oficial', 'Encuesta Independiente'],
+                    datasets: [{
+                        label: 'A favor / De acuerdo',
+                        data: [76.4, 18.5],
+                        backgroundColor: colors.green
+                    }, {
+                        label: 'En contra / Desacuerdo',
+                        data: [23.6, 54.6],
+                        backgroundColor: colors.red
+                    }, {
+                        label: 'Sin posición / Dudas',
+                        data: [0, 26.9],
+                        backgroundColor: colors.yellow
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        x: { stacked: true },
+                        y: { 
+                            stacked: true,
+                            max: 100,
+                            ticks: {
+                                callback: value => value + '%'
+                            }
+                        }
+                    }
+                }
+            });
+
+            // Gráfico de Preocupaciones
+            const concernsCtx = document.getElementById('concernsChart').getContext('2d');
+            new Chart(concernsCtx, {
+                type: 'bar',
+                data: {
+                    labels: Object.keys(surveyData.concerns),
+                    datasets: [{
+                        label: 'Menciones',
+                        data: Object.values(surveyData.concerns),
+                        backgroundColor: colors.blue,
+                        borderColor: colors.blue,
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: { beginAtZero: true }
+                    },
+                    plugins: {
+                        legend: { display: false }
+                    }
+                }
+            });
+
+            // Gráfico de Participación
+            const participationCtx = document.getElementById('participationChart').getContext('2d');
+            new Chart(participationCtx, {
+                type: 'pie',
+                data: {
+                    labels: [
+                        'Participaron en oficial (13.3%)',
+                        'Solo en independiente (30.2%)',
+                        'No participaron (56.5%)'
+                    ],
+                    datasets: [{
+                        data: [33, 75, 140],
+                        backgroundColor: [colors.green, colors.yellow, colors.lightGray]
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false
+                }
+            });
+
+            // Gráfico de Viabilidad (corregido para Chart.js 3)
+            const viabilityCtx = document.getElementById('viabilityChart').getContext('2d');
+            new Chart(viabilityCtx, {
+                type: 'bar',
+                data: {
+                    labels: [
+                        'Consenso Docente',
+                        'Participación en Consultas',
+                        'Viabilidad Financiera',
+                        'Documentación Completa',
+                        'Pertinencia Regional',
+                        'Rigor Académico'
+                    ],
+                    datasets: [{
+                        label: 'Brecha (%)',
+                        data: [-41.5, -36.7, -55, -70, -50, -50],
+                        backgroundColor: colors.red,
+                        borderColor: colors.red,
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    indexAxis: 'y',
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        x: {
+                            max: 0,
+                            min: -80,
+                            ticks: {
+                                callback: function(value) {
+                                    return Math.abs(value) + '%';
+                                }
+                            }
+                        }
+                    },
+                    plugins: {
+                        legend: { display: false },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    return 'Déficit: ' + Math.abs(context.parsed.x) + '%';
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+
+            // Gráfico de Costos
+            const costCtx = document.getElementById('costChart').getContext('2d');
+            new Chart(costCtx, {
+                type: 'line',
+                data: {
+                    labels: ['Año 1', 'Año 2', 'Año 3', 'Año 4'],
+                    datasets: [{
+                        label: 'Inversión Anual',
+                        data: [8089, 9656, 11405, 12908],
+                        borderColor: colors.red,
+                        backgroundColor: 'rgba(184, 39, 45, 0.1)',
+                        tension: 0.4
+                    }, {
+                        label: 'Acumulada',
+                        data: [8089, 17745, 29150, 41953],
+                        borderColor: colors.blue,
+                        backgroundColor: 'rgba(0, 107, 179, 0.1)',
+                        tension: 0.4
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            ticks: {
+                                callback: value => '$' + value.toLocaleString() + 'M'
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        function loadComments() {
+            filterComments('all');
+        }
+
+        function loadEmails() {
+            const container = document.getElementById('emailList');
+            emailList.forEach(email => {
+                const div = document.createElement('div');
+                div.className = 'email-item';
+                div.textContent = email;
+                container.appendChild(div);
+            });
+        }
+    </script>
+</body>
+</html>
